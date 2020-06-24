@@ -22,6 +22,7 @@ using Windows.UI.Popups;
 using DocumentFormat.OpenXml.Wordprocessing;
 using Gremlin.Net.Process.Traversal;
 using System.Collections.Immutable;
+using DocumentFormat.OpenXml.Bibliography;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -62,25 +63,47 @@ namespace adaptive
         {
             popuptext.Text = " ";
         }
+        private void tableview_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            var send = sender as tableview;
+            var view = send.DataContext as employee;
+            popuptext.Text = "Hi " + view.firstname + " " + view.lastname + "!";
+            onhoverpopup.IsOpen = true;
 
+
+        }
+
+        private void tableview_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            popuptext.Text = " ";
+        }
 
         public employee click;
         
-        private async void ListView_ItemClick(object sender, ItemClickEventArgs e)
+      
+
+        private void tableview_ItemClick(object sender, ItemClickEventArgs e)
         {
-           
             var clickedItem = e.ClickedItem;
             click = (employee)clickedItem;
             string message = click.firstname + click.lastname + click.id;
-            MessageDialog msg = new MessageDialog(message);
-            await msg.ShowAsync();
+            ObservableCollection<employee> emps = new ObservableCollection<employee>();
+            emps.Add(click);
+            viewemplist.ItemsSource = emps;
+            tableview.Visibility = Visibility.Collapsed;
+            listview.Visibility = Visibility.Visible;
             viewemplist.Visibility = Visibility.Visible;
-            
-             
-            
-           // viewemplist.List = click.id;
         }
-       
-
+        private void listview_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var clickedItem = e.ClickedItem;
+            click = (employee)clickedItem;
+            string message = click.firstname + click.lastname + click.id;
+            employee = employeemanager.getemployeedetails();
+            ObservableCollection<employee> emps = new ObservableCollection<employee>();
+            emps.Add(click);
+            viewemplist.ItemsSource = emps;
+            viewemplist.Visibility = Visibility.Visible;
+        }
     }
 }

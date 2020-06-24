@@ -10,18 +10,48 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
        
-    <StackPanel>
-        <TextBlock x:ConnectionId='2'   Width="100" x:Name="one"  Text="secondpage"   Margin="10,10,10,10" />
-        <TextBlock x:ConnectionId='3'   Width="100" x:Name="two"                                 Margin="10,10,10,10" />
-        <TextBlock x:ConnectionId='4'   Width="100" x:Name="three"                                Margin="10,10,10,10" />
-        <TextBlock x:ConnectionId='5'   Width="100" x:Name="four"                          Margin="10,10,10,10" />
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="100,40,100,100" BorderBrush="Black" BorderThickness="2" Padding="20,20,20,20" >
+        <StackPanel Orientation="Horizontal">
+        <TextBlock x:ConnectionId='18' Width="130" Text="Firstname:" Name="firstnamelabel" ></TextBlock>
+        <TextBlock x:ConnectionId='19'   Width="100" x:Name="two"                                Margin="10,0,10,10" />
+        </StackPanel>
+        <StackPanel  Orientation="Horizontal" Margin="0,10,0,0">
+            <TextBlock x:ConnectionId='16' Width="130" Text="Lastname:" Name="lastnamelabel" ></TextBlock>
 
-        <TextBlock x:ConnectionId='6' Width="100" x:Name="five"                            Margin="10,10,10,10"/>
-        <TextBlock x:ConnectionId='7' Width="100" x:Name="six"                            Margin="10,10,10,10"/>
-        <TextBlock x:ConnectionId='8' Width="150" x:Name="seven"                             Margin="10,10,10,10"/>
-        <TextBlock x:ConnectionId='9' Width="150" x:Name="eight"                             Margin="10,10,10,10"/>
-        <TextBlock x:ConnectionId='10' Width="120" x:Name="nine"                         Margin="10,10,10,10"/>
-        <TextBlock x:ConnectionId='11' Width="120" x:Name="ten"                           Margin="10,10,10,10"/>
+            <TextBlock x:ConnectionId='17'   Width="100" x:Name="three"                                 Margin="10,0,10,10" />
+        </StackPanel>
+        <StackPanel  Orientation="Horizontal" Margin="0,10,0,0" >
+            <TextBlock x:ConnectionId='14' Width="130" Text="Employeeid:" Name="empidlabel"  ></TextBlock>
+        
+        <TextBlock x:ConnectionId='15'   Width="100" x:Name="four"                        Margin="10,0,10,10" />
+        </StackPanel>
+        <StackPanel  Orientation="Horizontal" Margin="0,10,0,0">
+            <TextBlock x:ConnectionId='12' Width="130" Text="Gender:" Name="genderlabel"  ></TextBlock>
+        <TextBlock x:ConnectionId='13' Width="100" x:Name="five"                            Margin="10,0,10,10"/>
+        </StackPanel>
+        <StackPanel  Orientation="Horizontal" Margin="0,10,0,0">
+            <TextBlock x:ConnectionId='10' Width="130" Text="Salary" Name="salarylabel"></TextBlock>
+
+        <TextBlock x:ConnectionId='11' Width="100" x:Name="six"                            Margin="10,0,10,10"/>
+        </StackPanel>
+        <StackPanel  Orientation="Horizontal" Margin="0,10,0,0">
+
+            <TextBlock x:ConnectionId='8' Width="130" Text="Phoneno:" Name="phonenolabel"  ></TextBlock>
+        <TextBlock x:ConnectionId='9' Width="150" x:Name="seven"                             Margin="10,0,10,10"/>
+        </StackPanel>
+        <StackPanel  Orientation="Horizontal" Margin="0,10,0,0">
+            <TextBlock x:ConnectionId='6' Width="130" Text="Teamname:" Name="teamnamelabel" ></TextBlock>
+        <TextBlock x:ConnectionId='7' Width="150" x:Name="eight"                               Margin="10,0,10,10"/>
+        </StackPanel>
+        <StackPanel  Orientation="Horizontal" Margin="0,10,0,0">
+            <TextBlock x:ConnectionId='4' Width="130" Text="Date of Birth:" Name="doblabel" ></TextBlock>
+        <TextBlock x:ConnectionId='5' Width="120" x:Name="nine"                         Margin="10,0,10,10"/>
+        </StackPanel>
+        <StackPanel  Orientation="Horizontal" Margin="0,10,0,0">
+
+            <TextBlock x:ConnectionId='2' Width="130" Text="Shift:" Name="shiftlabel"  ></TextBlock>
+        <TextBlock x:ConnectionId='3' Width="120" x:Name="ten"                            Margin="10,0,10,10"/>
+        </StackPanel>
     </StackPanel>
     
 </UserControl>

@@ -17,6 +17,7 @@ using Gremlin.Net.Process.Traversal;
 using System.Collections.ObjectModel;
 using System.ServiceModel.Channels;
 using Windows.UI.Popups;
+using DocumentFormat.OpenXml.Bibliography;
 
 // The User Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -31,14 +32,8 @@ namespace adaptive
             this.InitializeComponent();
             this.DataContextChanged += (s, e) => Bindings.Update();
         }
-        string eid;
+        
 
       
-         
-
-
-
-    
-
     }
 }

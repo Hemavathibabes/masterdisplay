@@ -10,7 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
    
-        <Grid>
+        <Grid Background="Gainsboro">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"></RowDefinition>
             <RowDefinition  Height="auto"></RowDefinition>
@@ -28,25 +28,33 @@
                 <TextBlock Text="Employee Details" Grid.Row="0" Margin="20"  Grid.Column="0" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                 <local:timer Grid.Row="0"   Margin="30" Grid.Column="2"/>
 
-            <Popup x:ConnectionId='8' Name="onhoverpopup" Margin="0,0,300,0" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsOpen="False" >
-                <TextBlock x:ConnectionId='9' FontWeight="Bold" FontSize="25" FontFamily="italic" Name="popuptext"></TextBlock>
+            <Popup x:ConnectionId='11' Name="onhoverpopup" Margin="0,0,300,0" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsOpen="False" >
+                <TextBlock x:ConnectionId='12' FontWeight="Bold" FontSize="25" FontFamily="italic" Name="popuptext"></TextBlock>
             </Popup>
 
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
             </Grid.ColumnDefinitions>
-        <ListView x:ConnectionId='2' Grid.Column="0"                                 SelectionMode="Single" IsItemClickEnabled="True"                               >
-            <ListView.ItemTemplate>
-            <DataTemplate                           >
-                <local:listview x:ConnectionId='7'                                                                                 />
-                   
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ListView x:ConnectionId='3' Grid.Column="1"                                 Name="viewemplist" Visibility="Collapsed">
+            <ListView x:ConnectionId='2' Grid.Column="0" Name="tableview"                                 SelectionMode="Single" IsItemClickEnabled="True"                                >
+                <ListView.ItemTemplate>
+                    <DataTemplate                           >
+                        <local:tableview x:ConnectionId='10'                                                                                  />
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:ConnectionId='3' Grid.Column="0" Name="listview"                                 SelectionMode="Single" Visibility="Collapsed"                               >
+                <ListView.ItemTemplate>
+                    <DataTemplate                           >
+                        
+                        <local:listview x:ConnectionId='8'                                                                                 />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        <ListView x:ConnectionId='4' Grid.Column="1"                                 Name="viewemplist" Visibility="Collapsed">
             <ListView.ItemTemplate>
                 <DataTemplate                           >
                     <local:viewemployee  />

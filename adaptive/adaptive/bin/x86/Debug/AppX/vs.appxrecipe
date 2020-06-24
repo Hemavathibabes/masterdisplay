@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-24T05:42:07.261</Modified>
+      <Modified>2020-06-24T11:11:12.242</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\adaptive.exe">
       <PackagePath>entrypoint\adaptive.exe</PackagePath>
-      <Modified>2020-06-24T05:42:06.278</Modified>
+      <Modified>2020-06-24T11:11:11.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\.nuget\packages\documentformat.openxml\2.11.0\lib\netstandard2.0\DocumentFormat.OpenXml.dll">
       <PackagePath>DocumentFormat.OpenXml.dll</PackagePath>
@@ -106,27 +106,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\adaptive.xr.xml">
       <PackagePath>adaptive.xr.xml</PackagePath>
-      <Modified>2020-06-24T04:31:20.966</Modified>
+      <Modified>2020-06-24T10:40:56.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-06-24T05:16:04.290</Modified>
+      <Modified>2020-06-24T11:11:11.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\listview.xbf">
       <PackagePath>listview.xbf</PackagePath>
-      <Modified>2020-06-24T05:16:04.290</Modified>
+      <Modified>2020-06-24T11:11:11.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-06-24T05:42:06.042</Modified>
+      <Modified>2020-06-24T11:11:11.532</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\tableview.xbf">
+      <PackagePath>tableview.xbf</PackagePath>
+      <Modified>2020-06-24T11:11:11.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\timer.xbf">
       <PackagePath>timer.xbf</PackagePath>
-      <Modified>2020-06-24T05:16:04.291</Modified>
+      <Modified>2020-06-24T11:11:11.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\viewemployee.xbf">
       <PackagePath>viewemployee.xbf</PackagePath>
-      <Modified>2020-06-24T05:16:04.291</Modified>
+      <Modified>2020-06-24T11:11:11.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -134,11 +138,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-06-23T09:15:28.350</Modified>
+      <Modified>2020-06-24T09:41:47.186</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hema-pt3672\source\repos\adaptive\adaptive\bin\x86\Debug\Core\adaptive.exe">
       <PackagePath>adaptive.exe</PackagePath>
-      <Modified>2020-06-24T05:42:07.251</Modified>
+      <Modified>2020-06-24T11:11:12.238</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

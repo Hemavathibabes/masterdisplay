@@ -139,28 +139,26 @@
         </VisualStateManager.VisualStateGroups> -->
 
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="auto"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+    <Grid >
 
-        <StackPanel BorderBrush="Black" Grid.Column="0" BorderThickness="2" Margin="10,10,10,10">
+
+        <StackPanel  Grid.Column="0"  Margin="10,10,10,10">
 
             <StackPanel x:ConnectionId='2' Orientation="Horizontal" Name="employeebox" >
                 <Button Content="&#xEA8C;" Background="Transparent" FontFamily="Segoe MDL2 Assets"></Button>
-                <TextBlock x:ConnectionId='5' Width="100" x:Name="three"                               HorizontalAlignment="Center" Margin="10,10,10,10"/>
-                <TextBlock x:ConnectionId='6' Width="120" x:Name="four"                              Margin="-30,10,30,0"/>
+                <TextBlock x:ConnectionId='4' Width="100" x:Name="three"                               HorizontalAlignment="Center" Margin="10,10,10,10"/>
+                <TextBlock x:ConnectionId='5' Width="120" x:Name="four"                              Margin="-30,10,30,0"/>
             </StackPanel>
-            <TextBlock x:ConnectionId='3' Width="100" x:Name="two"                           Margin="10,10,95,10" />
-            <TextBlock x:ConnectionId='4' Width="150" x:Name="eight"                              Margin="10,10,45,10"/>
-        </StackPanel>
-      
-         
-       
 
+            <TextBlock x:ConnectionId='3' Width="150" x:Name="eight"                              Margin="10,10,45,10"/>
+        </StackPanel>
     </Grid>
 
+    <!--  -->
+               
+
+    
+           
 
 
 </UserControl>
